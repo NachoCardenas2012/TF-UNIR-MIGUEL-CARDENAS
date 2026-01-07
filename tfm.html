@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de Vacantes Internas (XYZ)</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        /* Adaptación mínima a la identidad corporativa */
+        .navbar-custom { background-color: #004d99; }
+        .navbar-custom .navbar-brand, .navbar-custom .nav-link { color: #ffffff; }
+        .btn-primary { background-color: #007bff; border-color: #007bff; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-custom">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">XYZ Postulación Interna</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#vacantes">Vacantes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Panel Administrativo</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Buscar vacante" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <h2 class="mb-4">Vacantes Disponibles</h2>
+        
+        <div id="vacantes" class="row">
+            
+            <div class="col-sm-6 col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Desarrollador Frontend</h5>
+                        <p class="card-text">Requisitos: HTML, CSS, Bootstrap 5. Proyecto de desarrollo de interfaces internas con enfoque Mobile First.</p>
+                        <p class="card-text"><small class="text-muted">Fecha límite: 15/10/2025</small></p>
+                        <a href="formulario.html" class="btn btn-primary">Postular</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-sm-6 col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Analista de RRHH</h5>
+                        <p class="card-text">Requisitos: Experiencia en gestión de personal. Soporte directo al área de selección.</p>
+                        <p class="card-text"><small class="text-muted">Fecha límite: 20/10/2025</small></p>
+                        <a href="formulario.html" class="btn btn-primary">Postular</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Gerente de Proyecto</h5>
+                        <p class="card-text">Responsable de coordinar equipos multidisciplinarios. Certificación PMP deseable. El rol exige alta capacidad de liderazgo y resolución de conflictos en entornos ágiles.</p>
+                        <p class="card-text"><small class="text-muted">Fecha límite: 01/11/2025</small></p>
+                        <a href="formulario.html" class="btn btn-primary">Postular</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="confirmationModalLabel">¡Postulación Enviada!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Gracias por postular. Recibirás un correo electrónico de confirmación pronto.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        // Simulación: Después de que el usuario postula (al hacer clic en un enlace),
+        // se mostraría el modal. Aquí solo lo mostramos al cargar la página para demostrarlo.
+        document.addEventListener('DOMContentLoaded', function() {
+            // Nota: En un sistema real, este código JS gestionaría la validación de formularios y la persistencia local.
+            
+            // Ejemplo de cómo se inicializa un modal de Bootstrap con JavaScript
+            // const confirmationModal = new bootstrap.Modal(document.getElementById('confirmationModal'));
+            // confirmationModal.show();
+        });
+    </script>
+</body>
+</html>
